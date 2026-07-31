@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  devops-app:
+    image: <DOCKERHUB_USERNAME>/devops-build-dev:latest
+    container_name: devops-app
+    ports:
+      - "80:80"
+    restart: unless-stopped
